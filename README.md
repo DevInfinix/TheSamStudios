@@ -1,8 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=🎨%20thesamstudios&fontSize=50&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=Modern%20Portfolio%20%26%20Creative%20Studio&descAlignY=55&descAlign=50" />
-
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=28&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&width=800&lines=Built+with+React+%2B+TypeScript;Powered+by+Vite+%26+Tailwind;Creative+Digital+Solutions" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=28&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&width=800&lines=TheSamStudios;Built+with+React+%2B+TypeScript;Powered+by+Vite+%26+Tailwind;Creative+Digital+Solutions" alt="Typing SVG" />
 
 [![Made with React](https://img.shields.io/badge/Made%20with-React-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
