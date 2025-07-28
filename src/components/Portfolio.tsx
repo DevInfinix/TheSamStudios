@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Github, ExternalLink, Music, Camera, Palette, Video, Youtube, Instagram } from 'lucide-react';
+import { ExternalLink, Music, Camera, Palette, Video } from 'lucide-react';
+import { SiGithub, SiInstagram, SiYoutube } from '@icons-pack/react-simple-icons';
 
 const Portfolio = () => {
   const { ref, inView } = useInView({
@@ -159,13 +160,13 @@ const Portfolio = () => {
                       href={item.youtube}
                       className="p-2 bg-red-500/20 rounded-full hover:bg-red-500/40 transition-all duration-300"
                     >
-                      <Youtube className="w-5 h-5 text-red-400" />
+                      <SiYoutube className="w-5 h-5 text-red-400" />
                     </a>
                     <a
                       href={item.instagram}
                       className="p-2 bg-pink-500/20 rounded-full hover:bg-pink-500/40 transition-all duration-300"
                     >
-                      <Instagram className="w-5 h-5 text-pink-400" />
+                      <SiInstagram className="w-5 h-5 text-pink-400" />
                     </a>
                   </div>
                 </motion.div>
@@ -225,7 +226,7 @@ const Portfolio = () => {
                     href={project.github}
                     className="flex items-center space-x-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition-all duration-300"
                   >
-                    <Github className="w-4 h-4" />
+                    <SiGithub className="w-4 h-4" />
                     <span>Code</span>
                   </a>
                   <a

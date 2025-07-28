@@ -1,7 +1,7 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Mail, MapPin, Phone, Github, Linkedin, Twitter, Instagram, Youtube, Download } from 'lucide-react';
+import { Mail, MapPin, Phone, Linkedin, Download } from 'lucide-react';
+import { SiGithub, SiX, SiInstagram, SiYoutube } from '@icons-pack/react-simple-icons';
 
 const Contact = () => {
   const { ref, inView } = useInView({
@@ -10,11 +10,11 @@ const Contact = () => {
   });
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub', color: 'hover:text-gray-400' },
+    { icon: SiGithub, href: '#', label: 'GitHub', color: 'hover:text-gray-400' },
     { icon: Linkedin, href: '#', label: 'LinkedIn', color: 'hover:text-blue-400' },
-    { icon: Twitter, href: '#', label: 'Twitter/X', color: 'hover:text-sky-400' },
-    { icon: Instagram, href: '#', label: 'Instagram', color: 'hover:text-pink-400' },
-    { icon: Youtube, href: '#', label: 'YouTube', color: 'hover:text-red-400' }
+    { icon: SiX, href: '#', label: 'Twitter/X', color: 'hover:text-sky-400' },
+    { icon: SiInstagram, href: '#', label: 'Instagram', color: 'hover:text-pink-400' },
+    { icon: SiYoutube, href: '#', label: 'YouTube', color: 'hover:text-red-400' }
   ];
 
   return (

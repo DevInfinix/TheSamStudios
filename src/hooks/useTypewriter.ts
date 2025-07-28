@@ -8,7 +8,7 @@ export const useTypewriter = (words: string[], speed: number = 100, deleteSpeed:
   useEffect(() => {
     const currentWord = words[currentWordIndex];
     
-    let timeout: NodeJS.Timeout;
+    let timeout: number;
 
     if (!isDeleting) {
       if (currentText.length < currentWord.length) {

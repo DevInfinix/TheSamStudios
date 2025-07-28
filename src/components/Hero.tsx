@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+
+const roles = ['Programmer', 'Musician', 'Photographer', 'Artist', 'Cinematographer'];
 
 const Hero = () => {
   const [currentRole, setCurrentRole] = useState('');
   const [roleIndex, setRoleIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-
-  const roles = ['Programmer', 'Musician', 'Photographer', 'Artist', 'Cinematographer'];
 
   useEffect(() => {
     const currentText = roles[roleIndex];
@@ -31,7 +31,7 @@ const Hero = () => {
     }, isDeleting ? 50 : 100);
 
     return () => clearTimeout(timeout);
-  }, [charIndex, isDeleting, roleIndex, roles]);
+  }, [charIndex, isDeleting, roleIndex]);
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative">

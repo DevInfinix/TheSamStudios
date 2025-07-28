@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { motion } from 'framer-motion';
 
 const ScrollIndicator = () => {
   const [activeSection, setActiveSection] = useState(0);
-  const sections = ['home', 'about', 'skills', 'portfolio', 'blog', 'contact'];
+  const sections = useMemo(() => ['home', 'about', 'skills', 'portfolio', 'blog', 'contact'], []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,7 +22,7 @@ const ScrollIndicator = () => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [sections]);
 
   const scrollToSection = (index: number) => {
     const element = document.getElementById(sections[index]);
